@@ -16,7 +16,11 @@ re-creating the figures is possible by only running notebooks with
 
 ## Execution in the cloud
 
-\<Binder>
+Jupyter Notebooks hosted in this repository can be executed and modified in the cloud via Binder. This does not require you to have anything installed and no files will be created on your machine. To access Binder, click on the Binder badge below.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lang-m/2023-paper-controlling-stable-bloch-points-with-electric-currents/HEAD)
+
+The notebook for Figure 1 (requires pyvista) currently does not run on Binder.
 
 ## Install required software locally
 
