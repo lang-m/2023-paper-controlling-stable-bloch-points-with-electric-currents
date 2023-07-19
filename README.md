@@ -33,7 +33,7 @@ subdirectory. Where required, the notebooks will import this extra functionality
 
 ## Execution in a Docker container
 
-This repository also contains a [Dockerfile](Dockerfile) to create the required software environment in a container. The container will also automatically run all notebooks that reproduce figures. Figures are not automatically transferred back to the host system.
+This repository also contains a [Dockerfile](docker/Dockerfile) to create the required software environment in a container. The container will also automatically run all notebooks that reproduce figures. Figures are not automatically transferred back to the host system.
 
 ## License
 
