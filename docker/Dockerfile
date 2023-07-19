@@ -6,7 +6,7 @@ USER root
 # xvfb required for pyvista in notebook for Fig. 1
 RUN apt-get -y update && apt-get install -y git libgl1-mesa-glx xvfb && rm -rf /var/lib/apt/lists/*
 
-ADD .. /tmp/
+ADD . /tmp/
 RUN chown -R $MAMBA_USER .
 
 USER $MAMBA_USER
