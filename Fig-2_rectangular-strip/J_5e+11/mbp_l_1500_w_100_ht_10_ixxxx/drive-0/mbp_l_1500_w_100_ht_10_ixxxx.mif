@@ -1,0 +1,143 @@
+# MIF 2.2
+
+SetOptions {
+  basename mbp_l_1500_w_100_ht_10_ixxxx
+  scalar_output_format %.12g
+  scalar_field_output_format {binary 8}
+  vector_field_output_format {binary 8}
+}
+
+# BoxAtlas for fixed1bottom_atlas
+Specify Oxs_BoxAtlas:fixed1bottom_atlas {
+  xrange { 7.5e-08 2.275e-07 }
+  yrange { 2.5e-08 7.75e-08 }
+  zrange { -2e-08 -1.75e-08 }
+  name fixed1bottom
+}
+
+# BoxAtlas for fixed1bottomspike_atlas
+Specify Oxs_BoxAtlas:fixed1bottomspike_atlas {
+  xrange { 1.425e-07 1.6e-07 }
+  yrange { 4.25e-08 6e-08 }
+  zrange { -2e-08 -1e-08 }
+  name fixed1bottomspike
+}
+
+# BoxAtlas for fixed1top_atlas
+Specify Oxs_BoxAtlas:fixed1top_atlas {
+  xrange { 7.5e-08 2.275e-07 }
+  yrange { 2.5e-08 7.75e-08 }
+  zrange { 7.5e-09 1e-08 }
+  name fixed1top
+}
+
+# BoxAtlas for fixed1topspike_atlas
+Specify Oxs_BoxAtlas:fixed1topspike_atlas {
+  xrange { 1.425e-07 1.6e-07 }
+  yrange { 4.25e-08 6e-08 }
+  zrange { 5e-09 1e-08 }
+  name fixed1topspike
+}
+
+# BoxAtlas for freebottom_atlas
+Specify Oxs_BoxAtlas:freebottom_atlas {
+  xrange { 0.0 1.5e-06 }
+  yrange { 0.0 1e-07 }
+  zrange { -2e-08 0.0 }
+  name freebottom
+}
+
+# BoxAtlas for freetop_atlas
+Specify Oxs_BoxAtlas:freetop_atlas {
+  xrange { 0.0 1.5e-06 }
+  yrange { 0.0 1e-07 }
+  zrange { 0.0 1e-08 }
+  name freetop
+}
+
+# BoxAtlas for entire_atlas
+Specify Oxs_BoxAtlas:entire_atlas {
+  xrange { 0.0 1.5e-06 }
+  yrange { 0.0 1e-07 }
+  zrange { -2e-08 1e-08 }
+  name entire
+}
+
+# MultiAtlas
+Specify Oxs_MultiAtlas:main_atlas {
+  atlas :fixed1bottom_atlas
+  atlas :fixed1bottomspike_atlas
+  atlas :fixed1top_atlas
+  atlas :fixed1topspike_atlas
+  atlas :freebottom_atlas
+  atlas :freetop_atlas
+  atlas :entire_atlas
+  xrange { 0.0 1.5e-06 }
+  yrange { 0.0 1e-07 }
+  zrange { -2e-08 1e-08 }
+}
+
+# RectangularMesh
+Specify Oxs_RectangularMesh:mesh {
+  cellsize { 2.5e-09 2.5e-09 2.5000000000000005e-09 }
+  atlas :main_atlas
+}
+
+# UniformExchange
+Specify Oxs_UniformExchange:exchange {
+  A 8.87e-12
+}
+
+# Demag
+Specify Oxs_Demag:demag {
+}
+
+# DMI of crystallographic class T
+Specify Oxs_DMI_T:dmi {
+  default_D 0.00158
+  atlas :main_atlas
+  D {
+    fixed1bottom fixed1bottom -0.00158
+    fixed1bottom fixed1bottomspike -0.00158
+    fixed1bottom freebottom -0.00158
+    fixed1bottomspike fixed1bottomspike -0.00158
+    fixed1bottomspike freebottom -0.00158
+    freebottom freebottom -0.00158
+  }
+}
+
+# m0 file
+Specify Oxs_FileVectorField:m0 {
+  file m0.omf
+  atlas :main_atlas
+}
+
+# m0_norm
+Specify Oxs_VecMagScalarField:m0_norm {
+    field :m0
+}
+
+# Zhang-Li evolver
+Specify Anv_SpinTEvolve:evolver {
+  alpha 0.28
+  gamma_G 221276.14872118403
+  u 37.72843792766987
+  beta 0.56
+}
+
+# TimeDriver
+Specify Oxs_TimeDriver {
+  evolver :evolver
+  mesh :mesh
+  Ms :m0_norm
+  m0 :m0
+  stopping_time 1e-11
+  stage_count 3000
+}
+
+Destination table mmArchive
+Destination mags mmArchive
+Destination archive mmArchive
+
+Schedule DataTable table Stage 1
+Schedule Oxs_TimeDriver::Magnetization mags Stage 1

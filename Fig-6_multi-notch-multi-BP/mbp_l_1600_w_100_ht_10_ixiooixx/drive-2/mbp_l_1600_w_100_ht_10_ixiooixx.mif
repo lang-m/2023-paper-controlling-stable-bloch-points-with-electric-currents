@@ -1,0 +1,584 @@
+# MIF 2.2
+
+SetOptions {
+  basename mbp_l_1600_w_100_ht_10_ixiooixx
+  scalar_output_format %.12g
+  scalar_field_output_format {binary 8}
+  vector_field_output_format {binary 8}
+}
+
+# BoxAtlas for fixed1bottom_atlas
+Specify Oxs_BoxAtlas:fixed1bottom_atlas {
+  xrange { 5e-08 1.525e-07 }
+  yrange { 2.5e-08 7.75e-08 }
+  zrange { -2e-08 -1.75e-08 }
+  name fixed1bottom
+}
+
+# BoxAtlas for fixed1bottomspike_atlas
+Specify Oxs_BoxAtlas:fixed1bottomspike_atlas {
+  xrange { 9.25e-08 1.1e-07 }
+  yrange { 4.25e-08 6e-08 }
+  zrange { -2e-08 -1e-08 }
+  name fixed1bottomspike
+}
+
+# BoxAtlas for fixed1top_atlas
+Specify Oxs_BoxAtlas:fixed1top_atlas {
+  xrange { 5e-08 1.525e-07 }
+  yrange { 2.5e-08 7.75e-08 }
+  zrange { 7.5e-09 1e-08 }
+  name fixed1top
+}
+
+# BoxAtlas for fixed1topspike_atlas
+Specify Oxs_BoxAtlas:fixed1topspike_atlas {
+  xrange { 9.25e-08 1.1e-07 }
+  yrange { 4.25e-08 6e-08 }
+  zrange { 5e-09 1e-08 }
+  name fixed1topspike
+}
+
+# BoxAtlas for free1bottom_atlas
+Specify Oxs_BoxAtlas:free1bottom_atlas {
+  xrange { 0.0 2e-07 }
+  yrange { 0.0 1e-07 }
+  zrange { -2e-08 0.0 }
+  name free1bottom
+}
+
+# BoxAtlas for free1top_atlas
+Specify Oxs_BoxAtlas:free1top_atlas {
+  xrange { 0.0 2e-07 }
+  yrange { 0.0 1e-07 }
+  zrange { 0.0 1e-08 }
+  name free1top
+}
+
+# BoxAtlas for free2bottom_atlas
+Specify Oxs_BoxAtlas:free2bottom_atlas {
+  xrange { 2e-07 4e-07 }
+  yrange { 0.0 1e-07 }
+  zrange { -2e-08 0.0 }
+  name free2bottom
+}
+
+# BoxAtlas for free2top_atlas
+Specify Oxs_BoxAtlas:free2top_atlas {
+  xrange { 2e-07 4e-07 }
+  yrange { 0.0 1e-07 }
+  zrange { 0.0 1e-08 }
+  name free2top
+}
+
+# BoxAtlas for fixed3bottom_atlas
+Specify Oxs_BoxAtlas:fixed3bottom_atlas {
+  xrange { 4.5e-07 5.525e-07 }
+  yrange { 2.5e-08 7.75e-08 }
+  zrange { -2e-08 -1.75e-08 }
+  name fixed3bottom
+}
+
+# BoxAtlas for fixed3bottomspike_atlas
+Specify Oxs_BoxAtlas:fixed3bottomspike_atlas {
+  xrange { 4.925e-07 5.1e-07 }
+  yrange { 4.25e-08 6e-08 }
+  zrange { -2e-08 -1e-08 }
+  name fixed3bottomspike
+}
+
+# BoxAtlas for fixed3top_atlas
+Specify Oxs_BoxAtlas:fixed3top_atlas {
+  xrange { 4.5e-07 5.525e-07 }
+  yrange { 2.5e-08 7.75e-08 }
+  zrange { 7.5e-09 1e-08 }
+  name fixed3top
+}
+
+# BoxAtlas for fixed3topspike_atlas
+Specify Oxs_BoxAtlas:fixed3topspike_atlas {
+  xrange { 4.925e-07 5.1e-07 }
+  yrange { 4.25e-08 6e-08 }
+  zrange { 5e-09 1e-08 }
+  name fixed3topspike
+}
+
+# BoxAtlas for free3bottom_atlas
+Specify Oxs_BoxAtlas:free3bottom_atlas {
+  xrange { 4e-07 6e-07 }
+  yrange { 0.0 1e-07 }
+  zrange { -2e-08 0.0 }
+  name free3bottom
+}
+
+# BoxAtlas for free3top_atlas
+Specify Oxs_BoxAtlas:free3top_atlas {
+  xrange { 4e-07 6e-07 }
+  yrange { 0.0 1e-07 }
+  zrange { 0.0 1e-08 }
+  name free3top
+}
+
+# BoxAtlas for fixed4bottom_atlas
+Specify Oxs_BoxAtlas:fixed4bottom_atlas {
+  xrange { 6.5e-07 7.525e-07 }
+  yrange { 2.5e-08 7.75e-08 }
+  zrange { -2e-08 -1.75e-08 }
+  name fixed4bottom
+}
+
+# BoxAtlas for fixed4bottomspike_atlas
+Specify Oxs_BoxAtlas:fixed4bottomspike_atlas {
+  xrange { 6.925e-07 7.1e-07 }
+  yrange { 4.25e-08 6e-08 }
+  zrange { -2e-08 -1e-08 }
+  name fixed4bottomspike
+}
+
+# BoxAtlas for fixed4top_atlas
+Specify Oxs_BoxAtlas:fixed4top_atlas {
+  xrange { 6.5e-07 7.525e-07 }
+  yrange { 2.5e-08 7.75e-08 }
+  zrange { 7.5e-09 1e-08 }
+  name fixed4top
+}
+
+# BoxAtlas for fixed4topspike_atlas
+Specify Oxs_BoxAtlas:fixed4topspike_atlas {
+  xrange { 6.925e-07 7.1e-07 }
+  yrange { 4.25e-08 6e-08 }
+  zrange { 5e-09 1e-08 }
+  name fixed4topspike
+}
+
+# BoxAtlas for free4bottom_atlas
+Specify Oxs_BoxAtlas:free4bottom_atlas {
+  xrange { 6e-07 8e-07 }
+  yrange { 0.0 1e-07 }
+  zrange { -2e-08 0.0 }
+  name free4bottom
+}
+
+# BoxAtlas for free4top_atlas
+Specify Oxs_BoxAtlas:free4top_atlas {
+  xrange { 6e-07 8e-07 }
+  yrange { 0.0 1e-07 }
+  zrange { 0.0 1e-08 }
+  name free4top
+}
+
+# BoxAtlas for fixed5bottom_atlas
+Specify Oxs_BoxAtlas:fixed5bottom_atlas {
+  xrange { 8.5e-07 9.525e-07 }
+  yrange { 2.5e-08 7.75e-08 }
+  zrange { -2e-08 -1.75e-08 }
+  name fixed5bottom
+}
+
+# BoxAtlas for fixed5bottomspike_atlas
+Specify Oxs_BoxAtlas:fixed5bottomspike_atlas {
+  xrange { 8.925e-07 9.1e-07 }
+  yrange { 4.25e-08 6e-08 }
+  zrange { -2e-08 -1e-08 }
+  name fixed5bottomspike
+}
+
+# BoxAtlas for fixed5top_atlas
+Specify Oxs_BoxAtlas:fixed5top_atlas {
+  xrange { 8.5e-07 9.525e-07 }
+  yrange { 2.5e-08 7.75e-08 }
+  zrange { 7.5e-09 1e-08 }
+  name fixed5top
+}
+
+# BoxAtlas for fixed5topspike_atlas
+Specify Oxs_BoxAtlas:fixed5topspike_atlas {
+  xrange { 8.925e-07 9.1e-07 }
+  yrange { 4.25e-08 6e-08 }
+  zrange { 5e-09 1e-08 }
+  name fixed5topspike
+}
+
+# BoxAtlas for free5bottom_atlas
+Specify Oxs_BoxAtlas:free5bottom_atlas {
+  xrange { 8e-07 1e-06 }
+  yrange { 0.0 1e-07 }
+  zrange { -2e-08 0.0 }
+  name free5bottom
+}
+
+# BoxAtlas for free5top_atlas
+Specify Oxs_BoxAtlas:free5top_atlas {
+  xrange { 8e-07 1e-06 }
+  yrange { 0.0 1e-07 }
+  zrange { 0.0 1e-08 }
+  name free5top
+}
+
+# BoxAtlas for fixed6bottom_atlas
+Specify Oxs_BoxAtlas:fixed6bottom_atlas {
+  xrange { 1.05e-06 1.1525e-06 }
+  yrange { 2.5e-08 7.75e-08 }
+  zrange { -2e-08 -1.75e-08 }
+  name fixed6bottom
+}
+
+# BoxAtlas for fixed6bottomspike_atlas
+Specify Oxs_BoxAtlas:fixed6bottomspike_atlas {
+  xrange { 1.0925e-06 1.11e-06 }
+  yrange { 4.25e-08 6e-08 }
+  zrange { -2e-08 -1e-08 }
+  name fixed6bottomspike
+}
+
+# BoxAtlas for fixed6top_atlas
+Specify Oxs_BoxAtlas:fixed6top_atlas {
+  xrange { 1.05e-06 1.1525e-06 }
+  yrange { 2.5e-08 7.75e-08 }
+  zrange { 7.5e-09 1e-08 }
+  name fixed6top
+}
+
+# BoxAtlas for fixed6topspike_atlas
+Specify Oxs_BoxAtlas:fixed6topspike_atlas {
+  xrange { 1.0925e-06 1.11e-06 }
+  yrange { 4.25e-08 6e-08 }
+  zrange { 5e-09 1e-08 }
+  name fixed6topspike
+}
+
+# BoxAtlas for free6bottom_atlas
+Specify Oxs_BoxAtlas:free6bottom_atlas {
+  xrange { 1e-06 1.2e-06 }
+  yrange { 0.0 1e-07 }
+  zrange { -2e-08 0.0 }
+  name free6bottom
+}
+
+# BoxAtlas for free6top_atlas
+Specify Oxs_BoxAtlas:free6top_atlas {
+  xrange { 1e-06 1.2e-06 }
+  yrange { 0.0 1e-07 }
+  zrange { 0.0 1e-08 }
+  name free6top
+}
+
+# BoxAtlas for free7bottom_atlas
+Specify Oxs_BoxAtlas:free7bottom_atlas {
+  xrange { 1.2e-06 1.4e-06 }
+  yrange { 0.0 1e-07 }
+  zrange { -2e-08 0.0 }
+  name free7bottom
+}
+
+# BoxAtlas for free7top_atlas
+Specify Oxs_BoxAtlas:free7top_atlas {
+  xrange { 1.2e-06 1.4e-06 }
+  yrange { 0.0 1e-07 }
+  zrange { 0.0 1e-08 }
+  name free7top
+}
+
+# BoxAtlas for free8bottom_atlas
+Specify Oxs_BoxAtlas:free8bottom_atlas {
+  xrange { 1.4e-06 1.6e-06 }
+  yrange { 0.0 1e-07 }
+  zrange { -2e-08 0.0 }
+  name free8bottom
+}
+
+# BoxAtlas for free8top_atlas
+Specify Oxs_BoxAtlas:free8top_atlas {
+  xrange { 1.4e-06 1.6e-06 }
+  yrange { 0.0 1e-07 }
+  zrange { 0.0 1e-08 }
+  name free8top
+}
+
+# BoxAtlas for entire_atlas
+Specify Oxs_BoxAtlas:entire_atlas {
+  xrange { 0.0 1.6e-06 }
+  yrange { 0.0 1e-07 }
+  zrange { -2e-08 1e-08 }
+  name entire
+}
+
+# MultiAtlas
+Specify Oxs_MultiAtlas:main_atlas {
+  atlas :fixed1bottom_atlas
+  atlas :fixed1bottomspike_atlas
+  atlas :fixed1top_atlas
+  atlas :fixed1topspike_atlas
+  atlas :free1bottom_atlas
+  atlas :free1top_atlas
+  atlas :free2bottom_atlas
+  atlas :free2top_atlas
+  atlas :fixed3bottom_atlas
+  atlas :fixed3bottomspike_atlas
+  atlas :fixed3top_atlas
+  atlas :fixed3topspike_atlas
+  atlas :free3bottom_atlas
+  atlas :free3top_atlas
+  atlas :fixed4bottom_atlas
+  atlas :fixed4bottomspike_atlas
+  atlas :fixed4top_atlas
+  atlas :fixed4topspike_atlas
+  atlas :free4bottom_atlas
+  atlas :free4top_atlas
+  atlas :fixed5bottom_atlas
+  atlas :fixed5bottomspike_atlas
+  atlas :fixed5top_atlas
+  atlas :fixed5topspike_atlas
+  atlas :free5bottom_atlas
+  atlas :free5top_atlas
+  atlas :fixed6bottom_atlas
+  atlas :fixed6bottomspike_atlas
+  atlas :fixed6top_atlas
+  atlas :fixed6topspike_atlas
+  atlas :free6bottom_atlas
+  atlas :free6top_atlas
+  atlas :free7bottom_atlas
+  atlas :free7top_atlas
+  atlas :free8bottom_atlas
+  atlas :free8top_atlas
+  atlas :entire_atlas
+  xrange { 0.0 1.6e-06 }
+  yrange { 0.0 1e-07 }
+  zrange { -2e-08 1e-08 }
+}
+
+# RectangularMesh
+Specify Oxs_RectangularMesh:mesh {
+  cellsize { 2.5e-09 2.5e-09 2.5000000000000005e-09 }
+  atlas :main_atlas
+}
+
+# UniformExchange
+Specify Oxs_UniformExchange:exchange {
+  A 8.87e-12
+}
+
+# Demag
+Specify Oxs_Demag:demag {
+}
+
+# DMI of crystallographic class T
+Specify Oxs_DMI_T:dmi {
+  default_D 0.00158
+  atlas :main_atlas
+  D {
+    fixed1bottom fixed1bottom -0.00158
+    fixed1bottom fixed1bottomspike -0.00158
+    fixed1bottom free1bottom -0.00158
+    fixed1bottom free2bottom -0.00158
+    fixed1bottom fixed3bottom -0.00158
+    fixed1bottom fixed3bottomspike -0.00158
+    fixed1bottom free3bottom -0.00158
+    fixed1bottom fixed4bottom -0.00158
+    fixed1bottom fixed4bottomspike -0.00158
+    fixed1bottom free4bottom -0.00158
+    fixed1bottom fixed5bottom -0.00158
+    fixed1bottom fixed5bottomspike -0.00158
+    fixed1bottom free5bottom -0.00158
+    fixed1bottom fixed6bottom -0.00158
+    fixed1bottom fixed6bottomspike -0.00158
+    fixed1bottom free6bottom -0.00158
+    fixed1bottom free7bottom -0.00158
+    fixed1bottom free8bottom -0.00158
+    fixed1bottomspike fixed1bottomspike -0.00158
+    fixed1bottomspike free1bottom -0.00158
+    fixed1bottomspike free2bottom -0.00158
+    fixed1bottomspike fixed3bottom -0.00158
+    fixed1bottomspike fixed3bottomspike -0.00158
+    fixed1bottomspike free3bottom -0.00158
+    fixed1bottomspike fixed4bottom -0.00158
+    fixed1bottomspike fixed4bottomspike -0.00158
+    fixed1bottomspike free4bottom -0.00158
+    fixed1bottomspike fixed5bottom -0.00158
+    fixed1bottomspike fixed5bottomspike -0.00158
+    fixed1bottomspike free5bottom -0.00158
+    fixed1bottomspike fixed6bottom -0.00158
+    fixed1bottomspike fixed6bottomspike -0.00158
+    fixed1bottomspike free6bottom -0.00158
+    fixed1bottomspike free7bottom -0.00158
+    fixed1bottomspike free8bottom -0.00158
+    free1bottom free1bottom -0.00158
+    free1bottom free2bottom -0.00158
+    free1bottom fixed3bottom -0.00158
+    free1bottom fixed3bottomspike -0.00158
+    free1bottom free3bottom -0.00158
+    free1bottom fixed4bottom -0.00158
+    free1bottom fixed4bottomspike -0.00158
+    free1bottom free4bottom -0.00158
+    free1bottom fixed5bottom -0.00158
+    free1bottom fixed5bottomspike -0.00158
+    free1bottom free5bottom -0.00158
+    free1bottom fixed6bottom -0.00158
+    free1bottom fixed6bottomspike -0.00158
+    free1bottom free6bottom -0.00158
+    free1bottom free7bottom -0.00158
+    free1bottom free8bottom -0.00158
+    free2bottom free2bottom -0.00158
+    free2bottom fixed3bottom -0.00158
+    free2bottom fixed3bottomspike -0.00158
+    free2bottom free3bottom -0.00158
+    free2bottom fixed4bottom -0.00158
+    free2bottom fixed4bottomspike -0.00158
+    free2bottom free4bottom -0.00158
+    free2bottom fixed5bottom -0.00158
+    free2bottom fixed5bottomspike -0.00158
+    free2bottom free5bottom -0.00158
+    free2bottom fixed6bottom -0.00158
+    free2bottom fixed6bottomspike -0.00158
+    free2bottom free6bottom -0.00158
+    free2bottom free7bottom -0.00158
+    free2bottom free8bottom -0.00158
+    fixed3bottom fixed3bottom -0.00158
+    fixed3bottom fixed3bottomspike -0.00158
+    fixed3bottom free3bottom -0.00158
+    fixed3bottom fixed4bottom -0.00158
+    fixed3bottom fixed4bottomspike -0.00158
+    fixed3bottom free4bottom -0.00158
+    fixed3bottom fixed5bottom -0.00158
+    fixed3bottom fixed5bottomspike -0.00158
+    fixed3bottom free5bottom -0.00158
+    fixed3bottom fixed6bottom -0.00158
+    fixed3bottom fixed6bottomspike -0.00158
+    fixed3bottom free6bottom -0.00158
+    fixed3bottom free7bottom -0.00158
+    fixed3bottom free8bottom -0.00158
+    fixed3bottomspike fixed3bottomspike -0.00158
+    fixed3bottomspike free3bottom -0.00158
+    fixed3bottomspike fixed4bottom -0.00158
+    fixed3bottomspike fixed4bottomspike -0.00158
+    fixed3bottomspike free4bottom -0.00158
+    fixed3bottomspike fixed5bottom -0.00158
+    fixed3bottomspike fixed5bottomspike -0.00158
+    fixed3bottomspike free5bottom -0.00158
+    fixed3bottomspike fixed6bottom -0.00158
+    fixed3bottomspike fixed6bottomspike -0.00158
+    fixed3bottomspike free6bottom -0.00158
+    fixed3bottomspike free7bottom -0.00158
+    fixed3bottomspike free8bottom -0.00158
+    free3bottom free3bottom -0.00158
+    free3bottom fixed4bottom -0.00158
+    free3bottom fixed4bottomspike -0.00158
+    free3bottom free4bottom -0.00158
+    free3bottom fixed5bottom -0.00158
+    free3bottom fixed5bottomspike -0.00158
+    free3bottom free5bottom -0.00158
+    free3bottom fixed6bottom -0.00158
+    free3bottom fixed6bottomspike -0.00158
+    free3bottom free6bottom -0.00158
+    free3bottom free7bottom -0.00158
+    free3bottom free8bottom -0.00158
+    fixed4bottom fixed4bottom -0.00158
+    fixed4bottom fixed4bottomspike -0.00158
+    fixed4bottom free4bottom -0.00158
+    fixed4bottom fixed5bottom -0.00158
+    fixed4bottom fixed5bottomspike -0.00158
+    fixed4bottom free5bottom -0.00158
+    fixed4bottom fixed6bottom -0.00158
+    fixed4bottom fixed6bottomspike -0.00158
+    fixed4bottom free6bottom -0.00158
+    fixed4bottom free7bottom -0.00158
+    fixed4bottom free8bottom -0.00158
+    fixed4bottomspike fixed4bottomspike -0.00158
+    fixed4bottomspike free4bottom -0.00158
+    fixed4bottomspike fixed5bottom -0.00158
+    fixed4bottomspike fixed5bottomspike -0.00158
+    fixed4bottomspike free5bottom -0.00158
+    fixed4bottomspike fixed6bottom -0.00158
+    fixed4bottomspike fixed6bottomspike -0.00158
+    fixed4bottomspike free6bottom -0.00158
+    fixed4bottomspike free7bottom -0.00158
+    fixed4bottomspike free8bottom -0.00158
+    free4bottom free4bottom -0.00158
+    free4bottom fixed5bottom -0.00158
+    free4bottom fixed5bottomspike -0.00158
+    free4bottom free5bottom -0.00158
+    free4bottom fixed6bottom -0.00158
+    free4bottom fixed6bottomspike -0.00158
+    free4bottom free6bottom -0.00158
+    free4bottom free7bottom -0.00158
+    free4bottom free8bottom -0.00158
+    fixed5bottom fixed5bottom -0.00158
+    fixed5bottom fixed5bottomspike -0.00158
+    fixed5bottom free5bottom -0.00158
+    fixed5bottom fixed6bottom -0.00158
+    fixed5bottom fixed6bottomspike -0.00158
+    fixed5bottom free6bottom -0.00158
+    fixed5bottom free7bottom -0.00158
+    fixed5bottom free8bottom -0.00158
+    fixed5bottomspike fixed5bottomspike -0.00158
+    fixed5bottomspike free5bottom -0.00158
+    fixed5bottomspike fixed6bottom -0.00158
+    fixed5bottomspike fixed6bottomspike -0.00158
+    fixed5bottomspike free6bottom -0.00158
+    fixed5bottomspike free7bottom -0.00158
+    fixed5bottomspike free8bottom -0.00158
+    free5bottom free5bottom -0.00158
+    free5bottom fixed6bottom -0.00158
+    free5bottom fixed6bottomspike -0.00158
+    free5bottom free6bottom -0.00158
+    free5bottom free7bottom -0.00158
+    free5bottom free8bottom -0.00158
+    fixed6bottom fixed6bottom -0.00158
+    fixed6bottom fixed6bottomspike -0.00158
+    fixed6bottom free6bottom -0.00158
+    fixed6bottom free7bottom -0.00158
+    fixed6bottom free8bottom -0.00158
+    fixed6bottomspike fixed6bottomspike -0.00158
+    fixed6bottomspike free6bottom -0.00158
+    fixed6bottomspike free7bottom -0.00158
+    fixed6bottomspike free8bottom -0.00158
+    free6bottom free6bottom -0.00158
+    free6bottom free7bottom -0.00158
+    free6bottom free8bottom -0.00158
+    free7bottom free7bottom -0.00158
+    free7bottom free8bottom -0.00158
+    free8bottom free8bottom -0.00158
+  }
+}
+
+# m0 file
+Specify Oxs_FileVectorField:m0 {
+  file m0.omf
+  atlas :main_atlas
+}
+
+# m0_norm
+Specify Oxs_VecMagScalarField:m0_norm {
+    field :m0
+}
+
+# zl_u file
+Specify Oxs_FileVectorField:zl_u {
+  file zl_u.ovf
+  atlas :main_atlas
+}
+
+# Zhang-Li evolver
+Specify Anv_SpinTEvolve_3d:evolver {
+  alpha 0.28
+  gamma_G 221276.14872118403
+  u zl_u
+  beta 0.56
+}
+
+# TimeDriver
+Specify Oxs_TimeDriver {
+  evolver :evolver
+  mesh :mesh
+  Ms :m0_norm
+  m0 :m0
+  stopping_time 5e-11
+  stage_count 100
+}
+
+Destination table mmArchive
+Destination mags mmArchive
+Destination archive mmArchive
+
+Schedule DataTable table Stage 1
+Schedule Oxs_TimeDriver::Magnetization mags Stage 1
