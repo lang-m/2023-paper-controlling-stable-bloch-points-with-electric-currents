@@ -2,8 +2,9 @@
 
 This repository provides Jupyter Notebooks and pre-computed data to re-run all simulations and reproduce all figures from:
 
-> Martin Lang, Swapneel Amit Pathak, Samuel J. R. Holt, Marijan Beg and Hans Fangohr. Controlling stable Bloch points with electric currents. \<arXiv> (2023)
+> Martin Lang, Swapneel Amit Pathak, Samuel J. R. Holt, Marijan Beg and Hans Fangohr. Controlling stable Bloch points with electric currents. [Scientific Reports **13** 18934 (2023)](https://doi.org/10.1038/s41598-023-45111-5).
 
+Article DOI: [10.1038/s41598-023-45111-5](https://doi.org/10.1038/s41598-023-45111-5)
 Repository DOI: [10.5281/zenodo.8164571](https://doi.org/10.5281/zenodo.8164571)
 
 ## Reproduce results
